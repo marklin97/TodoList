@@ -15,7 +15,7 @@ const TaskItem = ({ task, deleteTask, setCurrent }) => {
       <div>
         <a
           href='#edit-task-modal'
-          className={`modal-trigger ${task.urgent ? 'red-text' : 'green-text'}`}
+          className={`modal-trigger ${task.status ? 'red-text' : 'green-text'}`}
           onClick={() => setCurrent(task)}
         >
           <span className='black-text'>{task.id}.</span> {task.title}
